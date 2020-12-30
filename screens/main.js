@@ -7,7 +7,7 @@ export default function Main() {
     return (
       <View style={styles.main}>
         <View style={{flexDirection: 'row'}}>
-            <Text>kaique</Text>
+            <Text>Bom dia</Text>
         </View>
         
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -15,10 +15,12 @@ export default function Main() {
                 style={{height: 600, width: 40, zIndex: 2}}
                 source={Espiral}
             />
-            <TextInput 
-                style={{height: 600, width: '85%', borderWidth: 1, borderColor: 'black', backgroundColor: 'white'}}
-                multiline
-            />
+            <View style={{width: '80%'}}>
+              <TextInput 
+                  style={{height: 600, width: '100%', borderWidth: 1, borderColor: 'black', backgroundColor: 'white', textAlignVertical: 'top', padding:10}}
+                  multiline
+              />
+            </View>
         </View>
       </View>
     );
