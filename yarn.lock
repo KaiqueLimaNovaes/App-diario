@@ -1017,6 +1017,11 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@expo-google-fonts/redressed@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/redressed/-/redressed-0.1.0.tgz#624a7d0942d304baade08622533869bd3ac52cf2"
+  integrity sha512-bRmjMmVbu6qcP6sARDTmIv1EqdDZnjc1qFlyUPHDCfoh4T2p9ZayTOD7JufsmpJZEqnf+ZEcxXOfiY6MFEMrWQ==
+
 "@expo/babel-preset-cli@0.2.18":
   version "0.2.18"
   resolved "https://registry.yarnpkg.com/@expo/babel-preset-cli/-/babel-preset-cli-0.2.18.tgz#136acf8a0efe259e29ebc614b68552e5acb47d86"

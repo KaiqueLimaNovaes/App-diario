@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Image } from 'react-native';
 import Espiral from '../assets/espiral2.png';
+import { useFonts, Redressed } from '@expo-google-fonts/redressed';
 //import '../functions/date.js';
 
 var data = new Date();
@@ -40,20 +41,17 @@ if(monthGet == 1){
 export default function Main() {
     return (
       <View style={styles.main}>
-        <View style={{flexDirection: 'row'}}>
-            <Text>Bom dia</Text>
-        </View>
-        
+
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Image
                 style={{height: 600, width: 40, zIndex: 2}}
                 source={Espiral}
             />
             <View style={{width: '80%', flexDirection: 'column'}}>
-              <View style={{height: 50, width: '100%', flexDirection: 'row'}}>
+              <View style={{height: 70, width: '100%', flexDirection: 'row'}}>
                 <View style={{width: '70%', backgroundColor: 'white', borderWidth: 1, borderColor: 'black', alignItems: 'center'}}>
                   <TextInput 
-                    style={{height: '100%', width: '100%', padding:10, fontSize: 28}}
+                    style={{height: '100%', width: '100%', padding:10, fontSize: 23, alignItems: 'center', fontFamily: 'Redressed'}}
                   />
                 </View>
                 <View style={{width: '30%', backgroundColor: 'white', borderWidth: 1, borderColor: 'black', alignItems: 'center'}}>
@@ -62,7 +60,7 @@ export default function Main() {
                 </View>
               </View>
               <TextInput 
-                  style={{height: 550, width: '100%', borderWidth: 1, borderColor: 'black', backgroundColor: 'white', textAlignVertical: 'top', padding:10}}
+                  style={{height: 530, width: '100%', borderWidth: 1, borderColor: 'black', backgroundColor: 'white', textAlignVertical: 'top', padding:10}}
                   multiline
               />
             </View>
@@ -73,7 +71,7 @@ export default function Main() {
 
   const styles = StyleSheet.create({
     main: {
-      //backgroundColor: 'blue',
+      //backgroundColor: '#FFFAF0',
       alignItems: 'center',
       justifyContent: 'center',
     },
